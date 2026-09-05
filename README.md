@@ -3,7 +3,7 @@
 作为业务项目根目录的 `.agents` submodule 使用。Codex 从 `.agents/skills/` 发现技能，支持相对软链接。
 
 - `skills/` 中 13 个共用技能目录链接到 shared（Karpathy + 完整 OpenSpec）。
-- `git-commit`、`git-release` 和 10 个 `speckit-*` 是 Codex 薄入口；`references` 链接到 shared 流程，不复制正文。
+- `git-commit`、`git-release` 和 10 个 `speckit-*` 是 Codex 薄入口；`SKILL.md` 通过相对路径直接引用 shared 流程，不复制正文。
 - Codex 用 `$openspec-propose`、`$openspec-apply-change`、`$speckit-plan`、`$git-commit` 等技能入口；Claude 的 slash command 语法不照搬。
 - `codex/config.example.toml` 只是可选配置说明，不会自动加载；如果项目需要，配置应在业务项目 `.codex/config.toml`，不在 `.agents/config.toml`。当前没有强制覆盖个人模型、权限或提供商。
 
