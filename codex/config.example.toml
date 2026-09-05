@@ -1,0 +1,3 @@
+# 可选的项目配置模板；不是 .agents 自动加载的文件。
+# 仅在项目需要时部署为 <project>/.codex/config.toml。
+# 模型、提供商和个人默认权限继续由 ~/.codex/config.toml 管理。

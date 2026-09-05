@@ -1,0 +1,1 @@
+../ai-share-config/scripts/setup.sh
